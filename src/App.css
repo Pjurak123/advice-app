@@ -1,0 +1,111 @@
+:root {
+  --clr-primary-light-cyan: hsl(193, 38%, 86%);
+  --clr-primary-neon-green: hsl(150, 100%, 66%);
+
+  --clr-neutral-grayish-blue: hsl(217, 19%, 38%);
+  --clr-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-neutral-dark-blue: hsl(218, 23%, 16%);
+
+  --ff-primary: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--clr-neutral-dark-blue);
+  font-size: 1rem;
+  min-width: 320px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+.card {
+  background-color: var(--clr-neutral-dark-grayish-blue);
+  border-radius: 1rem;
+  display: flex;
+  min-width: 18rem;
+  max-width: 30rem;
+  margin: 15rem auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.advice-id {
+  color: var(--clr-primary-neon-green);
+  font-family: var(--ff-primary);
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.advice-text {
+  color: #fff;
+  font-family: var(--ff-primary);
+  font-size: 1.75rem;
+  font-weight: 800;
+  padding: 0 1rem 2rem;
+}
+
+.divider {
+  margin: 0 auto;
+  margin-bottom: -1.875rem;
+  padding: 0 0.5rem 2rem;
+  width: 90%;
+}
+
+.circle {
+  background-color: var(--clr-primary-neon-green);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -5rem;
+  height: 4.4rem;
+  width: 4.4rem;
+}
+
+.circle:hover {
+  box-shadow: 0 0 1.875rem hsl(150, 100%, 66%);
+  transition: 0.5s ease-in-out;
+}
+
+.circle-container {
+  position: relative;
+  top: 2.375rem;
+}
+
+.dice-container {
+  position: absolute;
+  display: flex;
+  top: 1.375rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.dice {
+  justify-self: center;
+}
